@@ -1,0 +1,114 @@
+---
+---
+
+@import
+  'globals/mixins',
+  'globals/reset';
+
+body {
+  @include border-box;
+  @include font-smoothing(antialiased);
+  color: $color-text;
+  font-family: $font-sans;
+  font-size: 1.275rem;
+  line-height: 1.5;
+  position: relative;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  text-rendering: optimizeLegibility;
+
+  @include media(small) {
+    font-size: 1rem;
+    border: none;
+  }
+}
+
+a {
+  // text-decoration-style: double;
+  font-family: $font-sans;
+  color: $color-link;
+  &:hover { color: rgba(27, 156, 226, 0.70); }
+  &:active { color: $color-text; }
+  &:focus {outline: 2px solid RGBA(250, 209, 109, 1.00);}
+}
+
+
+@font-face {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+}
+
+
+
+.topbar{
+  border-bottom: 1px solid #EBECED;
+  padding: 0.5em 0.8em;
+}
+
+.logo {
+  display: inline-block;
+  align-items: middle;
+}
+
+#links {
+  display: inline-block;
+  align-items: middle;
+}
+
+.mw-layout {
+  max-width: 48em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+#links, li {
+  display: inline-block;
+  margin-left: 0.6em;
+  align-items: middle;
+}
+
+.hero-banner{
+  color: white;
+  width: 100%;
+  padding: 100px 0;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(/assets/images/hero.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper {
+  padding: 0 0.5rem;
+}
+
+.main-content{
+  background-color: #EDEFF3;
+  padding: 88px 0;
+  @include media(small) {
+    padding: 44px 0;
+  }
+}
+
+.mw-layout-xl{
+  max-width: 54em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include media(small) {
+    display: block;
+  }
+}
+
+.gig{
+  width: 28%;
+  margin: 2%;
+  @include media(small) {
+    width: 100%;
+    margin-bottom: 8%;
+  }
+}

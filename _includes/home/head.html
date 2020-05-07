@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="{% if page.class %}{{ page.class }} {% endif %}">
+  <head>
+    <title>
+      {% if site.lang == 'en' %}
+      {{ page.title_en }}
+      {% else %}
+      {{ page.title }}
+      {% endif %}
+    </title>
+    <meta name="title" content="{{ page.title }}">
+    <meta name="description" content='{{ page.title | "City of San Antonio Gig Platforms"}}'>
+    <meta name="keywords" content="City of San Antonio Gig Platforms" />
+
+
+    <!-- facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://liftupsa.com{{ page.url }}">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content='{{ page.title | "City of San Antonio Gig Platforms" }}'>
+    <!-- <meta property="og:image" content="https://liftupsa.com/assets/images/"> -->
+
+    <!-- twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://liftupsa.com{{ page.url }}">
+    <meta property="twitter:title" content="{{ page.title }}">
+    <meta property="twitter:description" content='{{ page.title | "City of San Antonio Gig Platforms" }}'>
+    <!-- <meta property="twitter:image" content="https://liftupsa.com/assets/images/"> -->
+
+
+    <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0" />
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/stylesheets/style.css" | relative_url}}">
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon_tiny.png" >
+    <script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+  </head>
