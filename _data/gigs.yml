@@ -1,0 +1,16 @@
+- name: TaskRabbit
+  description: TaskRabbit is a platform that allows people to connect and hire people to perform tasks. Tasks can include building furniture, repair, to cleaning.
+  link: https://www.taskrabbit.com/locations/san-antonio
+  image: taskrabbit.svg
+
+
+- name: Upwork
+  description: Upwork is for people that have a proven creative talent(e.g. graphic illustrations), well developed technical skills(e.g. web development), and high quality freelancers. They have strict standards now and you need to have actual skills to be listed on their platform.
+  link: https://www.upwork.com/
+  image: upwork.png
+
+
+- name: Instacart
+  description: Instacart allows people to earn a little income by shopping and delivering groceries for others.
+  link: https://shoppers.instacart.com/
+  image: instacart.png
